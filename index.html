@@ -1,92 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parth's Blog and Journal</title>      <!--Temporary title, change it later on-->
-        <link rel="stylesheet" href="./css/style-tablet.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <!-- <link rel="stylesheet" href="./style.css" /> -->
-        <link rel="icon" type="image/png" href="./images/journal_icon.png" />
-        <script src="./js/app.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Parth's Blog and Journal</h1>
-            <span>
-                Just a compilation of all the experiences that I gain along my path to fulfill my dreams.
-            </span>
-            <nav>
-                <a href="./index.html" target="_self" class="current">Home</a>
-                <a href="./blogs.html" target="_self">Blogs</a>
-                <a href="./about_me.html" target="_self">About Me</a>
-                <a href="./contact.html" target="_self">Contact</a>
-            </nav>
-        </header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth's Blog and Journal</title>
+    <link rel="stylesheet" href="./style-mobile.css" />
+    <link rel="stylesheet" href="./css/style-tablet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./images/journal_icon.png" />
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/journal_icon.png" alt="Journal Icon" class="journal-icon for-mobile">
+
+        <h1>Parth's Blog and Journal</h1>
+
+        <span class="clear-both">
+            Just a compilation of all the experiences that I gain along my path to fulfill my dreams.
+        </span>
+
+        <!-- Button to toggle opening and closing of hidden navbar in mobile, hidden on other devices -->
+        <button class="nav-toggle-btn for-mobile" id="mob-nav-btn" onclick="mobNavToggle()">
+            <img src="./images/menu-button-of-three-horizontal-lines.png" alt="MENU BUTTON">
+        </button>
+
+        <!-- This is navbar for mobile -->
+        <nav class="for-mobile" id="hidden-mob-nav">
+            <a href="#" target="_self">Home</a>
+            <a href="./blogs.html" target="_self">Blogs</a>
+            <a href="./about_me.html" target="_self">About</a>
+            <a href="./contact.html" target="_self">Contact</a>
+        </nav>
+
+        <!-- This is navbar for all other devices -->
+        <nav class="non-mobile">
+            <a href="#" target="_self">Home</a>
+            <a href="./blogs.html" target="_self">Blogs</a>
+            <a href="./about_me.html" target="_self">About</a>
+            <a href="./contact.html" target="_self">Contact</a>
+        </nav>
+    </header>
+    <hr class="clear-both">
+    <h1>Home</h1>
+    <hr>
+    <blockquote class="home">
+        <h2>
+            <q>
+                Learn from the mistakes of others.<br>
+                You can’t live long enough to make them all yourself.
+            </q><br><br>
+            <cite>- Eleanor Roosevelt</cite>
+        </h2>
+    </blockquote>
+    <section class="intro">
+        <h2>Welcome to My Blog & Journal</h2>
+        <br>
+        <p>
+            My first attempt to write a Journal. To many of you, the word Journal might give the idea that it contains
+            all about my personal life. I won’t say that you are wrong but in this Blog/Journal of mine, I will present
+            to you all the amazing experiences that I gain, as well as my perspective towards life.
+        </p>
+        <p>
+            One’s own mistakes still remain the best teacher. But as said by Eleanor Roosevelt, “Learn from the mistakes
+            of others. You can’t live long enough to make them all yourself.” This is one reason as to why you should
+            consider investing your time in reading my blogs. Another one being, who does not like to laugh at others’
+            stupidity (lol!)
+        </p>
+        <p>
+            I hope you enjoy my work and I will be very happy if my work helps you, even in any tiniest way.
+        </p>
+        <p>
+            Thanks!
+        </p>
+        <span>- Parth Gupta</span>
+    </section>
+    <hr>
+    <section class="latestpost">
+        <h2>Latest Post</h2>
         <hr>
-        <h1>Home</h1>
-        <hr>
-        <blockquote class="home">
-            <h2>
-                <q>
-                    Learn from the mistakes of others.<br>
-                    You can’t live long enough to make them all yourself.
-                </q><br><br>
-                <cite>- Eleanor Roosevelt</cite>    
-            </h2>   
-        </blockquote>
-        <section class="intro">
-            <h2>Welcome to My Blog & Journal</h2>
-            <br>
-            <p>
-                My first attempt to write a Journal. To many of you, the word Journal might give the idea that it contains all about my personal life. I won’t say that you are wrong but in this Blog/Journal of mine, I will present to you all the amazing experiences that I gain, as well as my perspective towards life.
-            </p>
-            <p>
-                One’s own mistakes still remain the best teacher. But as said by Eleanor Roosevelt, “Learn from the mistakes of others. You can’t live long enough to make them all yourself.” This is one reason as to why you should consider investing your time in reading my blogs. Another one being, who does not like to laugh at others’ stupidity (lol!)
-            </p>
-            <p>
-                I hope you enjoy my work and I will be very happy if my work helps you, even in any tiniest way.
-            </p>
-            <p>
-                I will be posting every Sunday at 8:00 AM IST (UTC+05:30 hours)
-            </p>
-            <p>
-                Thanks!
-            </p>
-            <span>- Parth Gupta</span>
-        </section>
-        <hr>
-        <section class="latestpost">
-            <h2>Latest Post</h2>
-            <hr>
-            <div class="latestpost">   
-                <article>
-                    <img src="./images/blog4-option3.jpg" alt="'Gratitude' Cover Picture">
-                    <h3><a href="./Blogs/Gratitude.html">Gratitude</a></h3>
-                    <span>Recent developments in my life made me re-think about my perspective towards certain things….</span>
-                    <a href="./Blogs/Gratitude.html" target="_self"><button class="defaultmargin readmore">Read Now</button></a>
-                    <span class="defaultmargin">May 30, 2021</span>
-                </article>
-            </div>
-            <!--Put the latest posts here (Learn how to do that!)(Will probably work with JavaScript)-->
-        </section>
-        <hr>
-        <section id="acknowledgement">
-            <h3>Acknowledgement</h3>
-            <p>
-                I would like to express my gratitude to all the people in my life. You may not find your mention in the blog, but I owe all my experiences of life to you all, because it was your presence that made all the events memorable.
-            </p>
-        </section>
-        <hr>
-        <footer>
-            <nav>
-                <a href="./index.html" target="_self">Home</a>
-                <a href="./blogs.html" target="_self">Blogs</a>
-                <a href="./about_me.html" target="_self">About Me</a>
-                <a href="./contact.html" target="_self">Contact</a>
-            </nav>
-            <span>&copy; Parth Gupta 2021</span>
-        </footer>
-    </body>
+        <div class="latestpost">
+            <article>
+                <img src="./images/blog4-option3.jpg" alt="'Gratitude' Cover Picture">
+                <h3><a href="./Blogs/Gratitude.html">Gratitude</a></h3>
+                <span>Recent developments in my life made me re-think about my perspective towards certain
+                    things….</span>
+                <a href="./Blogs/Gratitude.html" target="_self"><button class="defaultmargin readmore">Read
+                        Now</button></a>
+                <span class="defaultmargin date-for-mob">May 30, 2021</span>
+            </article>
+        </div>
+        <!--Put the latest posts here (Learn how to do that!)(Will probably work with JavaScript)-->
+    </section>
+    <hr>
+    <section id="acknowledgement">
+        <h3>Acknowledgement</h3>
+        <p>
+            I would like to express my gratitude to all the people in my life. You may not find your mention in the
+            blog, but I owe all my experiences of life to you all, because it was your presence that made all the events
+            memorable.
+        </p>
+    </section>
+    <hr>
+    <footer>
+        <nav>
+            <a href="#header" target="_self">Home</a>
+            <a href="./blogs.html" target="_self">Blogs</a>
+            <a href="./about_me.html" target="_self">About</a>
+            <a href="./contact.html" target="_self">Contact</a>
+        </nav>
+        <span>&copy; Parth Gupta 2021</span>
+    </footer>
+</body>
+
 </html>

@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parth's Blog and Journal - Blogs</title>      <!--Temporary title, change it later on-->
+        <title>Parth's Blog and Journal</title>     
+        <link rel="stylesheet" href="./style-mobile.css" />
         <link rel="stylesheet" href="./css/style-tablet.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="icon" type="image/png" href="./images/journal_icon.png" />
         <script src="./js/app.js"></script>
     </head>
+
     <body>
         <header>
+            <img src="./images/journal_icon.png" alt="Journal Icon" class="journal-icon for-mobile">
+            
             <h1>Parth's Blog and Journal</h1>
-            <span>
+            
+            <span class="clear-both">
                 Just a compilation of all the experiences that I gain along my path to fulfill my dreams.
             </span>
-            <nav>
+            
+            <!-- Button to toggle opening and closing of hidden navbar in mobile, hidden on other devices -->
+            <button class="nav-toggle-btn for-mobile" id="mob-nav-btn" onclick="mobNavToggle()">
+                <img src="./images/menu-button-of-three-horizontal-lines.png" alt="MENU BUTTON">
+            </button>
+            
+            <!-- This is navbar for mobile -->
+            <nav class="for-mobile" id="hidden-mob-nav">
                 <a href="./index.html" target="_self">Home</a>
-                <a href="./blogs.html" target="_self">Blogs</a>
-                <a href="./about_me.html" target="_self">About Me</a>
+                <a href="#" target="_self">Blogs</a>
+                <a href="./about_me.html" target="_self">About</a>
+                <a href="./contact.html" target="_self">Contact</a>
+            </nav>
+
+            <!-- This is navbar for all other devices -->
+            <nav class="non-mobile">
+                <a href="./index.html" target="_self">Home</a>
+                <a href="#" target="_self">Blogs</a>
+                <a href="./about_me.html" target="_self">About</a>
                 <a href="./contact.html" target="_self">Contact</a>
             </nav>
         </header>
@@ -32,7 +53,7 @@
                 <h3><a href="./Blogs/A_Flashback_Start.html">A Flashback Start</a></h3>
                 <span>My first blog which revolves around the lockdown days of the year 2020.</span>
                 <a href="./Blogs/A_Flashback_Start.html" target="_self"><button class="defaultmargin readmore">Read Now</button></a>
-                <span class="defaultmargin">April 18, 2021</span>
+                <span class="defaultmargin date-for-mob">April 18, 2021</span>
             </article>
         </div>
         <div>
@@ -41,33 +62,33 @@
                 <h3><a href="./Blogs/Is_this_the_End.html">Is this the End?</a></h3>
                 <span>With the ongoing pandemic, doubts about the survival and future of the human race pops up in minds of many.</span>
                 <a href="./Blogs/Is_this_the_End.html" target="_self"><button class="defaultmargin readmore">Read Now</button></a>
-                <span class="defaultmargin">April 25, 2021</span>
+                <span class="defaultmargin date-for-mob">April 25, 2021</span>
             </article>
         </div>
-        <div>   
+        <div>
             <article>
                 <img src="./images/pexels-photo-5428830-what-to-do-now.jpeg" alt="'What to do now?' Cover Picture">
                 <h3><a href="./Blogs/What_to_do_now.html">What to do now?</a></h3>
                 <span>Being stuck at home for indefinite number of days is pretty boring indeed. So what to do now?</span>
                 <a href="./Blogs/What_to_do_now.html" target="_self"><button class="defaultmargin readmore">Read Now</button></a>
-                <span class="defaultmargin">May 2, 2021</span>
+                <span class="defaultmargin date-for-mob">May 2, 2021</span>
             </article>
         </div>
-        <div>   
+        <div>
             <article>
                 <img src="./images/blog4-option3.jpg" alt="'Gratitude' Cover Picture">
                 <h3><a href="./Blogs/Gratitude.html">Gratitude</a></h3>
                 <span>Recent developments in my life made me re-think about my perspective towards certain things….</span>
                 <a href="./Blogs/Gratitude.html" target="_self"><button class="defaultmargin readmore">Read Now</button></a>
-                <span class="defaultmargin">May 30, 2021</span>
+                <span class="defaultmargin date-for-mob">May 30, 2021</span>
             </article>
         </div>
         <hr>
         <footer>
             <nav>
                 <a href="./index.html" target="_self">Home</a>
-                <a href="./blogs.html" target="_self">Blogs</a>
-                <a href="./about_me.html" target="_self">About Me</a>
+                <a href="#header" target="_self">Blogs</a>
+                <a href="./about_me.html" target="_self">About</a>
                 <a href="./contact.html" target="_self">Contact</a>
             </nav>
             <span>&copy; Parth Gupta 2021</span>

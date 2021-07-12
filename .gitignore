@@ -1,1 +1,7 @@
 node_modules
+package-lock.json
+package.json
+erased-out.txt
+firebase.js
+retrive.js
+admin.html

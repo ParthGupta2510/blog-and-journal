@@ -3,69 +3,86 @@
   margin: 0.09% 0;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1139px) {
-  /* background-color: rgba(42,42,43,255);
-    color: rgba(224,208,167,255); */
-
-  .for-mobile {
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .non-mobile {
     display: none;
   }
 
   header {
-    width: 100%;
     background-color: rgba(42, 42, 43, 255);
     color: rgba(224, 208, 167, 255);
+    padding-bottom: 5%;
+  }
+
+  header img {
+    width: 30vw;
+    float: left;
+    margin: 1.5vw 3%;
   }
 
   header h1 {
-    width: 90%;
-    margin: 0 auto 2%;
-    text-align: center;
-    font-size: 2.7em;
-    text-shadow: 2px 2px #545554;
+    display: inline-block;
+    width: 60vw;
+    margin: 4vw 0;
+    text-align: left;
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgba(224, 208, 167, 255);
+    text-shadow: 2px 2px hsl(120, 1%, 40%);
   }
 
   header span {
+    margin: 0 0 0 7%;
     display: block;
+    width: 69%;
+    text-align: justify;
+    font-size: 0.8em;
+  }
+
+  .nav-toggle-btn {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(45, 100%, 40%);
+    border-radius: 10%;
+    border: none;
+    float: right;
+    margin-right: 20px;
+
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+
+  .nav-toggle-btn img {
+    width: 95%;
+  }
+
+  #hidden-mob-nav {
+    display: none;
+  }
+
+  #hidden-mob-nav {
     width: 80%;
-    margin: 1% auto;
-    font-size: 1.3em;
-    letter-spacing: 0.03em;
-    word-spacing: 0.05em;
+    margin: 7% auto 0;
   }
 
-  header nav {
+  #hidden-mob-nav a:link {
     display: block;
-    width: 90%;
-    margin: 1% auto;
-    text-align: center;
-  }
-
-  header nav a {
-    text-align: center;
-    display: inline-block;
-    width: 23%;
-    margin: 1% 0.1%;
-    padding: 1% 0;
-    color: #000000;
+    margin: 3% auto;
+    padding: 5%;
+    font-size: 1.5em;
+    text-align: left;
     background-color: hsl(45, 100%, 30%);
     text-decoration: none;
-    font-size: 1.75em;
-    border-radius: 5%;
+    font-weight: bolder;
+    color: white;
+    text-shadow: black 1px 1px;
+    border-radius: 2%;
   }
 
-  header nav a:visited {
-    color: #000000;
-  }
-
-  header nav a:hover {
-    background-color: hsl(45, 100%, 20%);
-    color: rgba(224, 208, 167, 255);
-  }
-
-  header nav a:focus {
-    background-color: hsl(45, 100%, 20%);
-    color: rgba(224, 208, 167, 255);
+  #hidden-mob-nav a:visited {
+    text-decoration: none;
+    color: white;
   }
 
   body {
@@ -76,40 +93,45 @@
   body > h1,
   section > h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #545554;
   }
 
   .home {
     display: block;
     width: 90%;
-    margin: 1% auto;
+    margin: 3% auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 0.8em;
     background-color: #86592d;
-    color: #e6b800;
-    padding: 2% 3%;
+    color: black;
+    padding: 10% 5%;
+    background-image: url("./images/home-quote-cover-pexels-photo-768473.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px green;
   }
 
   .intro {
     display: block;
     margin: 5% auto;
-    width: 80%;
+    width: 90%;
     padding: 0 3%;
   }
 
   .intro h2 {
-    font-size: 2.7em;
+    font-size: 2em;
     text-align: center;
-    margin: 1% 2%;
+    margin: 0 2%;
     text-decoration: double underline 1.8px;
   }
 
   .intro p {
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: justify;
-    line-height: 1.3em;
-    margin: 1% 0;
+    margin: 0 0 7%;
     padding: 1% 0;
   }
 
@@ -117,38 +139,37 @@
     display: inline-block;
     width: 100%;
     text-align: right;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   hr {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   #acknowledgement {
     display: block;
+    width: 100%;
     margin: 0 auto;
-    width: 100vw;
-    height: 66.66vw;
     background-color: lightseagreen;
     background-image: url("../images/acknowledgement-cover2.jpg");
-    background-size: contain;
+    background-size: cover;
     padding: 15% 5%;
   }
 
   #acknowledgement h3 {
-    margin: 7% auto;
+    margin: 5% auto;
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     color: rgba(187, 245, 153, 0.871);
   }
 
   #acknowledgement p {
-    width: 80%;
-    margin: 7% auto;
+    width: 90%;
+    margin: 10% auto;
     color: rgba(187, 245, 153, 0.871);
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
 
   footer nav {
@@ -162,7 +183,7 @@
     display: inline-block;
     margin: 0 2%;
     padding: 1% 3%;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     color: rgba(42, 42, 43, 255);
   }
@@ -177,10 +198,11 @@
   }
 
   footer span {
+    margin-top: 2%;
     display: inline-block;
     text-align: right;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-right: 1%;
   }
 
@@ -188,23 +210,22 @@
 
   article {
     display: block;
-    width: 80%;
-    margin: 2% auto;
+    width: 90%;
+    margin: 10% auto;
     border: 2px solid rgba(42, 42, 43, 255);
-    padding: 2% 1%;
+    padding: 2.7% 1%;
     text-align: center;
   }
 
   article img {
-    width: 60%;
-    margin: 0;
-    padding: 0;
+    width: 90%;
+    margin: 1%;
   }
 
   article h3 {
     width: 100%;
-    font-size: 2.5em;
-    margin: 2% 2% 0;
+    font-size: 2em;
+    margin: 2% 2%;
     padding: 1% 0;
   }
 
@@ -214,8 +235,8 @@
     text-align: justify;
     width: 80%;
     margin: 0 auto;
-    padding: 5% 0 0;
-    font-size: 1.4em;
+    padding: 8% 0 0;
+    font-size: 1em;
   }
 
   .defaultmargin {
@@ -229,7 +250,7 @@
   .readmore {
     display: inline-block;
     margin: 3% 2%;
-    padding: 2%;
+    padding: 3%;
     text-align: center;
     background-color: #8b6430;
     border-radius: 10%;
@@ -241,9 +262,9 @@
   .date-for-mob {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 5% auto 0;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   article a {
@@ -267,28 +288,8 @@
 
   .latestpost h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #545554;
-  }
-
-  .latestpost h3 {
-    font-size: 2.5em;
-  }
-
-  .latestpost h3 a:hover {
-    text-decoration: underline 2px;
-  }
-
-  .latestpost article {
-    width: 80%;
-    margin: 2% 10%;
-    padding: 4%;
-    border: 4px dotted #545554;
-    background-color: hsla(120, 1%, 33%, 0.4);
-  }
-
-  .latestpost span {
-    color: #fff2d9;
   }
 
   /* Code for Contact.html page */
@@ -298,9 +299,9 @@
   }
 
   #contact-options {
-    display: inline-block;
-    width: 50%;
-    margin: 5% 25%;
+    display: block;
+    width: 90%;
+    margin: 5% auto;
     text-align: center;
   }
 
@@ -308,20 +309,17 @@
 color: rgba(224,208,167,255);*/
 
   input {
-    position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
   }
 
   label {
-    display: inline-block;
-    width: 40%;
-    margin: 0 2%;
+    display: block;
+    width: 50%;
+    margin: 1% auto;
     text-align: center;
-    font-size: 2em;
-    padding: 1%;
+    font-size: 1.5em;
+    padding: 4% 1%;
     border: solid 2px #000000;
   }
 
@@ -338,29 +336,26 @@ color: rgba(224,208,167,255);*/
   #contact-form,
   #contact-email {
     display: none;
-    margin: 2%;
-    padding: 2%;
   }
 
   #contact-email h2 {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 2%;
+    font-size: 1.5em;
+    margin: 5% auto;
   }
 
   #contact-email p {
-    margin: 2% 5%;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
 
   #contact-email button {
-    padding: 1%;
+    padding: 5%;
     background-color: #8b6430;
     text-transform: uppercase;
     border-radius: 20%;
-    font-size: 0.75em;
-    margin: 1%;
+    font-size: 1em;
+    margin: 5% auto;
   }
 
   #contact-email button:hover {
@@ -371,44 +366,46 @@ color: rgba(224,208,167,255);*/
   #pls-wait {
     clear: both;
     display: block;
-    width: 35%;
+    width: 90%;
     text-align: center;
-    margin: 3% auto 0;
-    font-size: 1.7em;
-    color: #545554;
-    text-shadow: 1px 1px rgba(255, 0, 0, 0.7);
-    background-color: rgba(0, 200, 200, 0.4);
+    margin: 7% auto 0;
+    font-size: 1.3em;
+    color: hsl(120, 1%, 25%);
+    /* text-shadow: 1px 1px rgba(255, 0, 0, 0.7); */
+    /* background-color: #ffffff; */
   }
 
   /* Code for Blog Posts */
 
   /* Common Blog Post Code */
 
+  .mob-adjust {
+    height: 7vh;
+  }
+
   .blog-title {
-    font-size: 3em;
+    font-size: 2.4em;
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
+    padding: 10% 1%;
   }
 
   #div-for-prev {
-    position: relative;
-    bottom: 10px;
     float: left;
-    margin-left: 1%;
-    width: 70px;
-    height: 70px;
+    margin-left: 3%;
+    width: 50px;
+    height: 50px;
     background-image: url(../images/blog-left-arrow.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   #div-for-next {
-    position: relative;
-    bottom: 10px;
     float: right;
-    margin-right: 1%;
-    width: 70px;
-    height: 70px;
+    margin-right: 3%;
+    width: 50px;
+    height: 50px;
     background-image: url(../images/blog-right-arrow.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -420,31 +417,31 @@ color: rgba(224,208,167,255);*/
 
   #blog-cover {
     display: block;
-    width: 40%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 5% auto;
   }
 
   #blogpost {
     clear: both;
     display: block;
     border: none;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.4em;
+    width: 90%;
+    margin: 3% auto;
+    font-size: 1em;
     padding: 5% 0;
   }
 
   .dear-reader {
-    width: 90%;
-    margin: 1% auto 4%;
-    border-left: 3px solid grey;
-    border-right: 3px solid grey;
-    padding: 1% 0;
+    width: 100%;
+    margin: 1% auto 5%;
+    border-left: 5px solid grey;
+    border-right: 5px solid grey;
+    padding: 2% 0;
   }
 
   #blogpost p {
     display: block;
-    padding: 0.8% 2%;
+    padding: 5% 2%;
     text-align: justify;
   }
 
@@ -454,22 +451,22 @@ color: rgba(224,208,167,255);*/
     float: left;
     width: auto;
     padding: 0;
-    margin: 0 1% 0 0;
+    margin: 0 3% 0 2%;
   }
 
   .div-for-blog-img {
     display: block;
-    margin: 3% auto;
-    width: 500px;
-    height: 500px;
+    margin: 5% auto;
+    width: 90vw;
+    height: 90vw;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .blog-nav {
     display: block;
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 5% auto;
   }
 
   .blog-nav a {
@@ -479,21 +476,19 @@ color: rgba(224,208,167,255);*/
 
   .blog-links {
     display: inline-block;
-    font-size: 1.3em;
+    width: 49vw;
+    text-align: center;
+    font-size: 1em;
     text-transform: uppercase;
-    padding: 1% 0;
+    padding: 4% 10%;
   }
 
   #prev-blog {
-    width: 30%;
-    text-align: left;
-    margin: 0 19% 0 0;
+    border-right: 3px solid grey;
   }
 
   #next-blog {
-    width: 30%;
-    text-align: right;
-    margin: 0 0 0 19%;
+    border-left: 3px solid grey;
   }
 
   /* Custom code for individual blogs */
@@ -505,19 +500,19 @@ color: rgba(224,208,167,255);*/
   /* Blog 2 */
 
   .blog2-list {
-    list-style-type: circle;
-    line-height: 1.7em;
+    list-style-type: disc;
+    line-height: 1.3em;
+    font-family: century;
     font-size: 1.1em;
-    margin-left: 10%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 60%;
+    margin: 3% 0 3% 7%;
+    width: 80%;
     border-left: 5px #545554 solid;
+    text-align: left;
+    padding: 5% 6%;
   }
 
   .blog2-list li {
-    text-align: left;
-    margin-left: 1%;
+    margin: 7% 0;
   }
 
   #blog2-flower-pic {
@@ -526,51 +521,59 @@ color: rgba(224,208,167,255);*/
 
   .bibliography {
     display: block;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 5% 0;
+    padding: 0;
   }
 
   .bibliography h2 {
-    font-size: 2em;
+    font-size: 1.9em;
     padding: 1% 0;
+    margin-bottom: 5%;
   }
 
   .bibliography p {
-    font-size: 1.3em;
+    font-size: 0.9em;
+    width: 80%;
+    margin: 2% auto;
+    text-align: left;
+  }
+
+  .bibliography ul {
     margin: 2% 0;
-    padding: 1%;
+    list-style: square;
   }
 
   .bibliography li {
-    font-size: 1.3em;
-    padding: 0.5% 0;
+    font-size: 0.9em;
+    padding: 2% 0;
   }
 
   /* Blog 3 */
 
   #blog3-google-search {
-    width: 715px;
-    height: 340px;
+    width: 85.8vw;
+    height: 40.8vw;
     background-image: url(../images/Screenshot_2.png);
   }
 
   #blog3-quote {
     display: block;
-    font-size: 1.3em;
-    width: 90%;
+    font-size: 1.1em;
+    width: 100%;
     margin: 2% auto;
-    padding: 1%;
+    padding: 3%;
     border-left: 10px #0e0504 solid;
     background-color: rgba(75, 31, 14, 0.8);
     color: rgba(224, 208, 167, 255);
-    text-shadow: 2px 2px rgba(76, 33, 15, 1);
+    text-shadow: 2px 1px #000000;
   }
 
   #blog3-quote cite {
     display: inline-block;
     width: 90%;
     text-align: right;
-    margin-right: 10%;
+    margin: 1% 0 1%;
   }
 
   #blog3-minecraft {
@@ -586,25 +589,28 @@ color: rgba(224,208,167,255);*/
   #blog4-perspective-quote {
     background-image: url(../images/Just-because-youre-right-doesnt-mean-i-m-wrong-you-just-havent-seen-life-from-my-position.jpg);
   }
+
   /* Code for About Me page */
 
   #author-pic {
-    float: left;
-    width: 25%;
+    display: block;
+    width: 65%;
     border-radius: 100%;
-    margin: 2% 5% 0 9%;
+    margin: 0 auto;
     border: 2px solid #000000;
   }
 
-  .about-me div {
-    display: inline-block;
-    width: 60%;
-    font-size: 1.5em;
-    margin-top: 1%;
+  .about-me p {
+    width: 80%;
+    font-size: 1em;
+    margin: 8% auto;
+    line-height: 1.3em;
+    text-align: justify;
   }
 
-  .about-me div p {
-    margin: 0 5% 4% 2%;
-    line-height: 1.29em;
+  /* Extra General code */
+
+  .clear-both {
+    clear: both;
   }
 }

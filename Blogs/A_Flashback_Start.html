@@ -1,83 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Parth's Blog and Journal</title>      <!--Temporary title, change it later on-->
-        <link rel="stylesheet" href="../css/style-tablet.css">
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="icon" type="image/png" href="../images/journal_icon.png" />
-    </head>
-    <body>
-        <header>
-            <h1>Parth's Blog and Journal</h1>
-            <span>
-                Journal & Blog : Just a compilation of all the experiences that I gain along my path to fulfill my dreams.
-            </span>
-            <nav>
-                <a href="../index.html" target="_self">Home</a>
-                <a href="../blogs.html" target="_self">Blogs</a>
-                <a href="../about_me.html" target="_self">About Me</a>
-                <a href="../contact.html" target="_self">Contact</a>
-            </nav>
-        </header>
-        <hr>
-        <h1>A Flashback Start<a href="./Is_this_the_End.html" class="heading-next-link"><span class="next">Next</span></a></h1>
-        <hr>
-        <img id="blogpic1" src="../images/pexels-photo-416904-A-flashback-start.jpeg" alt="Cover Picture">
-        <article id="blogpost" >
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth's Blog and Journal</title>
+    <link rel="stylesheet" href="../style-mobile.css" />
+    <link rel="stylesheet" href="../css/style-tablet.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../images/journal_icon.png" />
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/journal_icon.png" alt="Journal Icon" class="journal-icon for-mobile">
+
+        <h1>Parth's Blog and Journal</h1>
+
+        <span class="clear-both">
+            Just a compilation of all the experiences that I gain along my path to fulfill my dreams.
+        </span>
+
+        <!-- Button to toggle opening and closing of hidden navbar in mobile, hidden on other devices -->
+        <button class="nav-toggle-btn for-mobile" id="mob-nav-btn" onclick="mobNavToggle()">
+            <img src="../images/menu-button-of-three-horizontal-lines.png" alt="MENU BUTTON">
+        </button>
+
+        <!-- This is navbar for mobile -->
+        <nav class="for-mobile" id="hidden-mob-nav">
+            <a href="../index.html" target="_self">Home</a>
+            <a href="../blogs.html" target="_self">Blogs</a>
+            <a href="../about_me.html" target="_self">About</a>
+            <a href="../contact.html" target="_self">Contact</a>
+        </nav>
+
+        <!-- This is navbar for all other devices -->
+        <nav class="non-mobile">
+            <a href="../index.html" target="_self">Home</a>
+            <a href="../blogs.html" target="_self">Blogs</a>
+            <a href="../about_me.html" target="_self">About</a>
+            <a href="../contact.html" target="_self">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <div class="for-mobile mob-adjust">
+        <a href="#" class="not-available">
+            <div id="div-for-prev">
+            </div>
+        </a>
+        <a href="./Is_this_the_End.html">
+            <div id="div-for-next">
+            </div>
+        </a>
+    </div>
+    <hr class="clear-both for-mobile">
+    <h1 class="blog-title">
+        <a href="#" class="not-available non-mobile">
+            <div id="div-for-prev">
+            </div>
+        </a>
+        A Flashback Start
+        <a href="./Is_this_the_End.html" class="non-mobile">
+            <div id="div-for-next">
+            </div>
+        </a>
+    </h1>
+    <hr>
+    <img id="blog-cover" src="../images/pexels-photo-416904-A-flashback-start.jpeg" alt="Cover Picture" />
+    <article id="blogpost">
+        <div class="dear-reader">
             <p>
                 <strong>Dear Readers,</strong>
             </p>
             <p>
-                This is my first ever attempt at writing a journal. I plan upon writing all of my experiences and my perspective towards my life and its associated problems! So here we go:
+                This is my first ever attempt at writing a journal. I plan upon writing all of my experiences and my
+                perspective towards my life and its associated problems! So here we go:
             </p>
-            <p>
-                <span class="drop-cap">I</span>t were the ‘Golden Days’ of lockdown, when I actually got diverted to activities other than studying. I am not trying to say that I was very studious before the pandemic, all I am trying to convey is that typical JEE aspirants don’t get much liberty to explore other activities and I was one of them. The fact that I am stating the lockdown period of the year 2020 as ‘Golden Days’ might make you think that I had an awesome time at home! But it is far from being the truth.
-            </p>
-            <p>
-                The educational institutions got closed as a preventive measure against the new Corona Virus Disease (COVID-19) on 15th March 2020. I clearly remember the extent of joy and relief that this news gave me since I had my physics exam of class 11 scheduled on 16th March and I had barely prepared for it. Later, all the exams were cancelled and the latter half of the month went by in just ‘trying’ to adjust to the new life at home. It was not easy, with a sudden change in the lifestyle, all the schedules got disturbed.
-            </p>
-            <p>
-                The month of April 2020, introduced us all to online learning, using various digital platforms like Zoom, Google Meet etc. Classes resumed, and studies began again, but something was different this time. It did not feel normal at all, being locked in one room, all alone, and hearing the teacher while copying down the notes from the virtual whiteboard. The atmosphere that I once used to enjoy in offline classes, was no longer present and with the routine disturbed already, the very obvious happened. My academic performance went down, partly taking along with it, my interest in studies. Such was the case of a lot of students out there, not just me.
-            </p>
-            <p>
-                Adding to it was the exposure to all the different activities that began trending over the internet, the diversion that I mentioned. I began investing more time into various other activities like vlogging, reading novels, cooking, gardening etc.
-            </p>
-            <p>
-                Life just seemed too happy, with the availability of free time to explore those activities.
-            </p>
-            <p>
-                But the nature of life is quite fascinating indeed, because it does not let you stop. It keeps you moving, neither will it allow you to be sad for too long, nor will it let you stay happy for more than a certain amount of time. This leads to the ups and downs in life!
-            </p>
-            <p>
-                And such was the case with me as well. That happiness slowly began fading as the outcome of my lowered interest in study and reduced study hours became visible in the result of the weekly tests.
-            </p>
-            <p>
-                To be continued….
-            </p>
-        </article>
-        <hr>
-        <section class="nav-to-more-blogs">
-            <a class="nav-to-more-blogs-link currently-invalid" id="prev-blog-link" href=""><div id="prev-blog" class="more-blogs">
+        </div>
+        <p>
+            <span class="drop-cap">I</span>t were the ‘Golden Days’ of lockdown, when I actually got diverted to
+            activities other than studying. I am not trying to say that I was very studious before the pandemic, all I
+            am trying to convey is that typical JEE aspirants don’t get much liberty to explore other activities and I
+            was one of them. The fact that I am stating the lockdown period of the year 2020 as ‘Golden Days’ might make
+            you think that I had an awesome time at home! But it is far from being the truth.
+        </p>
+        <p>
+            The educational institutions got closed as a preventive measure against the new Corona Virus Disease
+            (COVID-19) on 15th March 2020. I clearly remember the extent of joy and relief that this news gave me since
+            I had my physics exam of class 11 scheduled on 16th March and I had barely prepared for it. Later, all the
+            exams were cancelled and the latter half of the month went by in just ‘trying’ to adjust to the new life at
+            home. It was not easy, with a sudden change in the lifestyle, all the schedules got disturbed.
+        </p>
+        <p>
+            The month of April 2020, introduced us all to online learning, using various digital platforms like Zoom,
+            Google Meet etc. Classes resumed, and studies began again, but something was different this time. It did not
+            feel normal at all, being locked in one room, all alone, and hearing the teacher while copying down the
+            notes from the virtual whiteboard. The atmosphere that I once used to enjoy in offline classes, was no
+            longer present and with the routine disturbed already, the very obvious happened. My academic performance
+            went down, partly taking along with it, my interest in studies. Such was the case of a lot of students out
+            there, not just me.
+        </p>
+        <p>
+            Adding to it was the exposure to all the different activities that began trending over the internet, the
+            diversion that I mentioned. I began investing more time into various other activities like vlogging, reading
+            novels, cooking, gardening etc.
+        </p>
+        <p>
+            Life just seemed too happy, with the availability of free time to explore those activities.
+        </p>
+        <p>
+            But the nature of life is quite fascinating indeed, because it does not let you stop. It keeps you moving,
+            neither will it allow you to be sad for too long, nor will it let you stay happy for more than a certain
+            amount of time. This leads to the ups and downs in life!
+        </p>
+        <p>
+            And such was the case with me as well. That happiness slowly began fading as the outcome of my lowered
+            interest in study and reduced study hours became visible in the result of the weekly tests.
+        </p>
+        <p>
+            To be continued….
+        </p>
+    </article>
+    <hr>
+    <section class="blog-nav">
+        <a href="#" class="not-available">
+            <div id="prev-blog" class="blog-links">
                 <h3>previous post</h3>
-                <p id="prev-blog-content"></p>  <!--Function to be added here!!-->
-            </div></a>
-            <a class="nav-to-more-blogs-link" id="next-blog-link" href="./Is_this_the_End.html"><div id="next-blog" class="more-blogs">
+                <p id="prev-blog-content">
+                </p>
+                <!--Function to be added here!!-->
+            </div>
+        </a>
+        <a href="./Is_this_the_End.html">
+            <div id="next-blog" class="blog-links">
                 <h3>next post</h3>
-                <p id="next-blog-content"></p>  <!--Function to be added here!!-->
-            </div></a>
-        </section>
-        <hr>
-        <footer>
-            <nav>
-                <a href="../index.html" target="_self">Home</a>
-                <a href="../blogs.html" target="_self">Blogs</a>
-                <a href="../about_me.html" target="_self">About Me</a>
-                <a href="../contact.html" target="_self">Contact</a>
-            </nav>
-            <span>&copy; Parth Gupta 2021</span>
-        </footer>
-    </body>
+                <p id="next-blog-content">
+                </p>
+                <!--Function to be added here!!-->
+            </div>
+        </a>
+    </section>
+    <hr>
+    <footer>
+        <nav>
+            <a href="../index.html" target="_self">Home</a>
+            <a href="../blogs.html" target="_self">Blogs</a>
+            <a href="../about_me.html" target="_self">About</a>
+            <a href="../contact.html" target="_self">Contact</a>
+        </nav>
+        <span>&copy; Parth Gupta 2021</span>
+    </footer>
+</body>
+
 </html>
