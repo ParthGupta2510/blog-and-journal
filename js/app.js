@@ -39,3 +39,11 @@ function mobNavToggle() {
         currentState = "open";
     }
 }
+
+// Covid Reference Alert Function for Blog 3, which pops up only once per opening of browser
+
+const mySessionStorage = window.sessionStorage;
+
+function covidRefAlert() {
+    alert("Please note that this Blog was written during the Pandemic lockdown days, and may not be as valid in future as it is now.");
+}
