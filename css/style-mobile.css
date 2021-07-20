@@ -7,6 +7,12 @@
   .non-mobile {
     display: none;
   }
+  
+  body {
+    background-color: #e0d0a7;
+    color: #454445;
+    overflow-x: hidden;
+  }
 
   header {
     background-color: rgba(42, 42, 43, 255);
@@ -84,12 +90,7 @@
     text-decoration: none;
     color: white;
   }
-
-  body {
-    background-color: #e0d0a7;
-    color: #454445;
-  }
-
+  
   body > h1,
   section > h1 {
     text-align: center;
@@ -208,6 +209,24 @@
 
   /* Following CSS for Blogs page */
 
+  .slide-in-r, .slide-in-l{
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .slide-in-r {
+    transform: translateX(-50%);
+  }
+  
+  .slide-in-l {
+    transform: translateX(50%);
+  }
+  
+  .slide-in-l.appear, .slide-in-r.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
   article {
     display: block;
     width: 90%;
@@ -542,6 +561,7 @@ color: rgba(224,208,167,255);*/
   .bibliography ul {
     margin: 2% 0;
     list-style: square;
+    width: 50%;
   }
 
   .bibliography li {

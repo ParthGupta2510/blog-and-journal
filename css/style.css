@@ -7,6 +7,12 @@
   .for-mobile {
     display: none;
   }
+  
+  body {
+    background-color: #e0d0a7;
+    color: #454445;
+    overflow-x: hidden;
+  }
 
   header {
     background-color: rgba(42, 42, 43, 255);
@@ -58,12 +64,7 @@
   /* .current{
     color: rgba(42,42,43,255);
     background-color: rgba(224,208,167,255);
-} */
-
-  body {
-    background-color: #e0d0a7;
-    color: #454445;
-  }
+  } */
 
   body > h1,
   section > h1 {
@@ -191,7 +192,25 @@
   }
 
   /* Following CSS for Blogs page */
-
+  
+  .slide-in-r, .slide-in-l{
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .slide-in-r {
+    transform: translateX(-50%);
+  }
+  
+  .slide-in-l {
+    transform: translateX(50%);
+  }
+  
+  .slide-in-l.appear, .slide-in-r.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
   article {
     display: inline-block;
     width: 70%;

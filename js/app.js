@@ -45,5 +45,48 @@ function mobNavToggle() {
 const mySessionStorage = window.sessionStorage;
 
 function covidRefAlert() {
-    alert("Please note that this Blog was written during the Pandemic lockdown days, and may not be as valid in future as it is now.");
+    alert("Please note that this Blog was written during the Pandemic lockdown days, and may not be valid to same extent in future as it is now / was then.");
 }
+
+// Scroll Animation on Blogs page
+
+const sliders = document.querySelectorAll('.slide-in');
+
+const appearOptions = {
+    threshold: 0.25,
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+        }
+    })
+}, appearOptions);
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
+/*
+const blogDivs = document.querySelectorAll("div");
+
+const options = {
+    root: null,
+    threshold: 0.2,
+    rootMargin: "-150px"
+};
+
+const scrollObserver = new IntersectionObserver(function(entries, scrollObserver) {
+    entries.forEach(entry => {
+        console.log(entry.target);
+    })
+}, options);
+
+
+blogDivs.forEach( div => {
+    scrollObserver.observe(div);
+})
+*/
