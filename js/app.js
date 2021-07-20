@@ -45,5 +45,5 @@ function mobNavToggle() {
 const mySessionStorage = window.sessionStorage;
 
 function covidRefAlert() {
-    alert("Please note that this Blog was written during the Pandemic lockdown days, and may not be as valid in future as it is now.");
+    alert("Please note that this Blog was written during the Pandemic lockdown days, and may not be valid to the same extent in future as it is now / was then.");
 }

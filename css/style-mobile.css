@@ -542,6 +542,7 @@ color: rgba(224,208,167,255);*/
   .bibliography ul {
     margin: 2% 0;
     list-style: square;
+    width: 50%;
   }
 
   .bibliography li {
